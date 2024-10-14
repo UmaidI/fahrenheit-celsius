@@ -30,11 +30,11 @@ const newTemp = convertToCelsius(fahTemp);
 const describeTemp = (celsTemp) => {
   if (celsTemp < 32){
       return "very cold";
-  } else if(celsTemp > 32 && newTemp < 64){
+  } else if(celsTemp > 32 && celsTemp < 64){
       return "cold";
-  } else if(celsTemp > 64 && newTemp < 86){
+  } else if(celsTemp > 64 && celsTemp < 86){
       return "warm";
-  } else if(celsTemp > 86 && newTemp < 100){
+  } else if(celsTemp > 86 && celseTemp < 100){
       return "hot";
   } else if(celsTemp >= 100){
       return "very hot";
