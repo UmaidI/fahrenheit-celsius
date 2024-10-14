@@ -42,4 +42,4 @@ const describeTemp = (fahrTemp) => {
 }
 const tempFeels = describeTemp(fahTemp);
 
-alert(`It's ${fahTemp} degrees outside and is ${tempFeels}!`);
+alert(`It's ${fahTemp} degrees fahrenheit outside and is ${tempFeels}!, and is ${newTemp} degrees celsius`);
