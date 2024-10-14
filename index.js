@@ -27,19 +27,19 @@ const newTemp = convertToCelsius(fahTemp);
 // then the alert would say hey its very cold // 
 
 
-const describeTemp = (celsTemp) => {
-  if (celsTemp < 32){
+const describeTemp = (fahrTemp) => {
+  if (fahrTemp < 32){
       return "very cold";
-  } else if(celsTemp > 32 && celsTemp < 64){
+  } else if(fahrTemp > 32 && fahrTemp < 64){
       return "cold";
-  } else if(celsTemp > 64 && celsTemp < 86){
+  } else if(fahrTemp > 64 && fahrTemp < 86){
       return "warm";
-  } else if(celsTemp > 86 && celseTemp < 100){
+  } else if(fahrTemp > 86 && fahrTemp < 100){
       return "hot";
-  } else if(celsTemp >= 100){
+  } else if(fahrTemp >= 100){
       return "very hot";
   }  
 }
-const tempFeels = describeTemp(newTemp);
+const tempFeels = describeTemp(fahTemp);
 
-alert(`It's ${newTemp} degrees outside and is ${tempFeels}!`)
+alert(`It's ${fahTemp} degrees outside and is ${tempFeels}!`);
